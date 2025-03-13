@@ -1,0 +1,15 @@
+{
+  "name": "serie-favorita",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "gulp-imagemin": "^9.1.0",
+    "sass": "^1.85.1"
+  }
+}
