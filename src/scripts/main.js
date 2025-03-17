@@ -3,13 +3,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const dataDeLancamento = new Date('2025-04-12 23:59:59')
     const hamburgerIcon = document.getElementById('hamburger-icon');
     const mobileMenu = document.getElementById('mobile-menu');
-    const hero = document.querySelector('#contador')
-    const heroHeight = hero.clientHeight
+    const trailer = document.querySelector('#trailer')
+    const trailerHeight = trailer.clientHeight
 
     window.addEventListener('scroll', function() {
         const posicaoAtual = this.window.scrollY
 
-        if (posicaoAtual < heroHeight) {
+        if (posicaoAtual < trailerHeight) {
             ocultaElementosDoHeader()
         } else {
             exibeElementosDoHeader()
