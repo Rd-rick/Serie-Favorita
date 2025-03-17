@@ -1,0 +1,35 @@
+section:nth-child(3) {
+    background-color: #000;
+    min-height: 10vh;
+}
+
+.contador { 
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        background: rgba(128, 128, 128, 0.2);
+        background: radial-gradient(circle, rgba(128, 128, 128, 0.1) 30%, rgba(128, 128, 128, 0) 100%);
+        text-transform: uppercase;
+        padding: 24px;
+        color: #fff;
+        font-size: 48px;
+        border-radius: 10px;
+
+        @media (max-width: 724px) {
+            font-size: 24px;
+            text-align: center;
+            line-height: 40px;
+        }
+
+        @media (min-width: 724px) and (max-width: 769px) {
+            text-align: center;
+        }
+    }
+
+    span {
+        color: #73342F;
+    }
+}

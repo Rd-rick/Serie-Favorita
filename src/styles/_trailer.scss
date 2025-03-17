@@ -1,0 +1,40 @@
+@use 'mixins' as m;
+
+section:nth-child(4) {
+    background-color: black;
+    min-height: 50vh;
+}
+
+.trailer {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__item {
+
+        &__title {
+            padding-bottom: 32px;
+            width: 800px;
+            text-align: center;
+
+            @media (max-width: 724px) {
+                width: 300px;
+            }
+
+            @media (min-width: 724px) and (max-width: 769px) {
+                width: 600px;
+            }
+        }
+
+        &__video {
+            padding-bottom: 1px;
+
+            @media (max-width: 724px) {
+                width: 95%;
+                height: 215px;
+            }
+        }
+    }
+
+}

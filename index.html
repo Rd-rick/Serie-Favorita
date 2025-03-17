@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The last of us</title>
+    <link rel="stylesheet" href="./dist/css/main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header">
+                <h1><img src="./dist/images/logo.png" alt="TOP SERIES"></h1>
+                <nav class="header__nav">
+                    <div class="header__nav--mobile">
+                        <div class="header__nav--mobile__icon" id="hamburger-icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></div>
+                    </div>
+                    <ul class="header__nav__item--desktop">
+                        <li class="header__nav__item--desktop__item">
+                            <img src="./dist/images/nav-inicio.png" alt="Inicio">
+                        </li>
+                        <li class="header__nav__item">
+                            <img src="./dist/images/nav-trailer.png" alt="Trailer">
+                        </li>
+                        <li class="header__nav__item">
+                            <img src="./dist/images/nav-novidade.png" alt="Novidades">
+                        </li>
+                    </ul>
+                    <ul class="header__nav__item--mobile" id="mobile-menu">
+                        <li class="header__nav__item--mobile__item">
+                            <img src="./dist/images/nav-inicio.png" alt="Inicio">
+                        </li>
+                        <li class="header__nav__item--mobile__item">
+                            <img src="./dist/images/nav-trailer.png" alt="Trailer">
+                        </li>
+                        <li class="header__nav__item--mobile__item">
+                            <img src="./dist/images/nav-novidade.png" alt="Novidades">
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="hero">
+                <img class="hero__title" src="./dist/images/hero-title.png" alt="">
+                <button class="hero__button" type="button" id="scrollButton">SAIBA MAIS</button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="contador" id="contador">
+            </div>
+        </div>
+    </section>
+    <section id="trailer">
+        <div class="container">
+            <div class="trailer">
+                <h2 class="trailer__item__title title--big">Assista ao Trailer Oficial de The Last of Us Part II – A Série</h2>
+                <iframe class="trailer__item__video" width= "760" height="415" src="https://www.youtube.com/embed/0vB2lHQim3Q?si=jtL7iklYjaw-4MnR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="news">
+                <ul class="news__nav">
+                    <li class="news__nav__item">
+                        <h2 data-tab-news="elenco" class="title news__nav__item--is-actives">Elenco</h2>
+                    </li>
+                    <li class="news__nav__item" data-tab-news="data">
+                        <h2 data-tab-news="data" class="title">Data de Lançamento</h2>
+                    </li>
+                </ul>
+                <div data-nav-news-id="elenco" class="news__cast news__cast--is-open">
+                    <ul class="news__cast__elenco">
+                        <li class="news__cast__elenco__item">
+                            <img src="./dist/images/elenco/Bella-Ramsel.jpeg" alt="Bella Ramsey">
+                            <h3 class="title--small">Bella Ramsey</h3>
+                            <p>Personagem: Ellie</p>
+                        </li>
+                        <li class="news__cast__elenco__item">
+                            <img src="./dist/images/elenco/Pedro-Pascal.jpeg" alt="Pedro Pascal">
+                            <h3 class="title--small">Pedro Pascal</h3>
+                            <p>Joel Miller</p>
+                        </li>
+                        <li class="news__cast__elenco__item">
+                            <img src="./dist/images/elenco/Kaitlyn-Dever.jpeg" alt="Kaitlyn Dever">
+                            <h3 class="title--small">Kaitlyn Dever</h3>
+                            <p>Abby</p>
+                        </li>
+                        <li class="news__cast__elenco__item">
+                            <img src="./dist/images/elenco/Jeffrey-wrigth.jpeg" alt="Jeffrey Wright">
+                            <h3 class="title--small">Jeffrey Wright</h3>
+                            <p>Isaac Dixon</p>
+                        </li>
+                        <li class="news__cast__elenco__item">
+                            <img src="./dist/images/elenco/Tati-Gabrielle.png" alt="Jeffrey Wright">
+                            <h3 class="title--small">Tati Gabrielle</h3>
+                            <p>Nora</p>
+                        </li>
+                    </ul>
+                    <h2 class="title">Criadores</h2>
+                    <ul class="news__cast__elenco">
+                        <li class="news__cast__elenco__item">
+                            <img src="./dist/images/elenco/Craig-Mazin.png" alt="Craig Mazin">
+                            <h3 class="title--small">Craig Mazin</h3>
+                        </li>
+                        <li class="news__cast__elenco__item">
+                            <img src="./dist/images/elenco/Neil-Druckmann.png" alt="Neil Druckmann">
+                            <h3 class="title--small">Neil Druckmann</h3>
+                        </li>
+                    </ul>
+                </div>
+
+                <div data-nav-news-id="data" class="news__release">
+                    <ul class="news__release__date">
+                        <h2 class="title--big">The Last of us part II</h2>
+                        <li class="news__release__date__item">
+                            <h2 class="title">📅 📢 Data Oficial de Lançamento</h2>
+                            <p>A segunda temporada da série estreia em 13 de abril de 2025 na HBO e HBO Max.</p>
+                            <p>A série terá 7 episódios, lançados semanalmente.</p>
+                        </li>
+                        <li class="news__release__date__item">
+                            <h2 class="title">Onde Assistir?</h2>
+                            <p>HBO (TV a cabo)</p>
+                            <p>HBO Max (streaming)</p>
+                        </li>
+                        <li class="news__release__date__item">
+                            <h2 class="title">⏳ Previsão de Próximas Temporadas</h2>
+                            <p>A história do jogo The Last of Us Part II será dividida em duas temporadas.</p>
+                            <p>A terceira temporada já está nos planos, mas sem data oficial ainda.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <img class="footer__border-top" src="./dist/images/footer--border-top.png" alt="">
+                <img class="footer__logo" src="./dist/images/logo.png" alt="TOP SERIES">
+                <ul class="footer__nav">
+                    <li class="footer__nav__item title--small"><a href="#">Inicio</a></li>
+                    <li class="footer__nav__item title--small"><a href="#">Trailer</a></li>
+                    <li class="footer__nav__item title--small"><a href="#">Novidades</a></li>
+                </ul>
+                <p class="footer__item text">&copy; 2025 - Criando por <a href="#">Ricardo</a> para fins de estudos</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./dist/js/main.js"></script>
+</body>
+</html>

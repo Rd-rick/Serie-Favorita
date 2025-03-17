@@ -24,6 +24,7 @@ function minificaImages() {
 exports.watch = function() {
     gulp.watch('./src/styles/*.scss', { ignoreInitial: false },gulp.parallel(compilaSass))
     gulp.watch('./src/scripts/*.js', { ignoreInitial: false }, gulp.parallel(scripts))
+    gulp.watch('./src/images/*', { ignoreInitial: false }, gulp.parallel(minificaImages))
 }
 
 exports.default = gulp.parallel(compilaSass, minificaImages, scripts)
