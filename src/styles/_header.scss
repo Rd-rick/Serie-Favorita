@@ -1,22 +1,40 @@
-header {
-    background-color: #000;
-}
-
 .header {
     min-height: 95px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #000;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.349);
+
+    &--hidden {
+        background-color: transparent;
+        border: none;
+    }
 
     h1 {
         img {
             height: 65px;
+            margin: 0 200px;
+
+            @media (max-width: 769px) {
+                margin: 0 20px;
+            }
         }
     }
 
     &__nav {
         display: flex;
         gap: 10px;
+        margin: 0 200px;
+
+        @media (max-width: 769px) {
+            margin: 0 20px;
+        }
 
         &__item--mobile {
             display: none;

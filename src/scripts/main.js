@@ -1,11 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
     const buttonsNews = document.querySelectorAll('[data-tab-news]')
     const dataDeLancamento = new Date('2025-04-12 23:59:59')
-
     const hamburgerIcon = document.getElementById('hamburger-icon');
     const mobileMenu = document.getElementById('mobile-menu');
+    const hero = document.querySelector('#contador')
+    const heroHeight = hero.clientHeight
 
-    console.log(hamburgerIcon)
+    window.addEventListener('scroll', function() {
+        const posicaoAtual = this.window.scrollY
+
+        if (posicaoAtual < heroHeight) {
+            ocultaElementosDoHeader()
+        } else {
+            exibeElementosDoHeader()
+        }
+    })
 
     hamburgerIcon.addEventListener('click', () => {
         mobileMenu.classList.toggle('header__nav__item--mobile--open');
@@ -35,6 +44,17 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     }
 })
+
+function ocultaElementosDoHeader() {
+    const header = document.querySelector('.header')
+    header.classList.add('header--hidden')
+}
+
+function exibeElementosDoHeader() {
+    const header = document.querySelector('.header')
+    header.classList.remove('header--hidden')
+}
+
 
 function atualizaContador(dataDeLancamento, intervalo) {
     const dataDeAgora = new Date()
