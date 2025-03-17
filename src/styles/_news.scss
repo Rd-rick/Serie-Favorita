@@ -13,6 +13,7 @@ section:nth-child(5) {
         display: flex;
         justify-content: center;
         gap: 50px;
+        padding-top: 70px;
 
         @media (max-width: 724px) {
             gap: 20px;
