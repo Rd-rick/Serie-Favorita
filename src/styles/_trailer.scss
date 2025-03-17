@@ -3,13 +3,21 @@
 section:nth-child(4) {
     background-color: black;
     min-height: 50vh;
+
+    @media (max-width: 724px) {
+        min-height: 40vh;
+    }
 }
 
 .trailer {
-    height: 50vh;
+    height: 55vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media (max-width: 724px) {
+        height: 40vh;
+    }
 
     &__item {
 
@@ -28,11 +36,10 @@ section:nth-child(4) {
         }
 
         &__video {
-            padding-bottom: 1px;
 
             @media (max-width: 724px) {
                 width: 95%;
-                height: 215px;
+                height: 300px;
             }
         }
     }
